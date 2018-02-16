@@ -16,6 +16,7 @@ RUN apt-get -qq update && \
     	gdal-bin  \
         gfortran \
 	git \
+	jq \
 	less \
         libxft-dev \
 	lsof \
