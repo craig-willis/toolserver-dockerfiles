@@ -6,7 +6,7 @@ if [ ! -d ~/work/data ]; then
 fi 
 
 if [ ! -d ~/work/tutorials ]; then
-   git clone https://github.com/terraref/tutorials.git ~/work/tutorials
+   git clone https://github.com/datadrivenag/tutorials ~/work/tutorials
 fi 
 
 . /usr/local/bin/start.sh jupyter notebook $*
