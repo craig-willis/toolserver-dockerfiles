@@ -71,4 +71,6 @@ RUN sed -i -e 's_127.0.0.1_0.0.0.0_g' /cloud9/configs/standalone.js
 
 VOLUME /workspace
 EXPOSE 80
-CMD ["nodejs", "/cloud9/server.js", "-p", "80", "-w", "/workspace", "-a", ":", "--listen", "0.0.0.0" ]
+
+COPY entrypoint.sh /
+ENTRYPOINT /entrypoint.sh
